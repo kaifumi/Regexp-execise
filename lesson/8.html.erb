@@ -1,0 +1,19 @@
+<%# 英単語にぴったりマッチさせる（\b の使い方） %>
+
+sounds that are pleasing to the ear.
+ear is the organ of the sense of hearing.
+I can't bear it.
+Why on earth would anyone feel sorry for you?
+
+<%# \bで単語の境界を表す %>
+<%# 単語内ではマッチしない %>
+\bear\b
+<%# \b挟むと単語を抜き出せる %>
+
+<td>
+<%= link_to I18n.t('.show'), user %>
+<%= link_to t('.edit'), edit_user_path(user) %>
+</td>
+
+\bt\b
+<%# tメソッドだけを抜き出す %>
